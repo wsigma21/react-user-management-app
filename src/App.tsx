@@ -1,10 +1,8 @@
 function App() {
 
   return (
-    <>
-      <p>テスト</p>
-    </>
-  )
+    <>テスト</>
+  );
 }
 
 export default App
