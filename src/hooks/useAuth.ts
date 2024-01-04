@@ -13,7 +13,7 @@ export const useAuth = () => {
     (id: string) => {
       setLoading(true);
       axios
-        .get<User>(`https://jsonplaceholder.typicode.com/users/fdfda${id}`)
+        .get<User>(`https://jsonplaceholder.typicode.com/users/${id}`)
         .then((res) => {
           if (res.data) {
             showMessage({ title: "ログインしました", status: "success" });
