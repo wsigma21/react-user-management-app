@@ -8,8 +8,8 @@ import { HeaderLayout } from "../components/template/HeaderLayout";
 export const Router: FC = memo(() => {
   return (
     <Routes>
-     <Route path="/" element={<Login />} />
-     <Route path="home" element={<HeaderLayout />}>
+      <Route path="/" element={<Login />} />
+      <Route path="home" element={<HeaderLayout />}>
       {homeRoutes.map((route: {
         name: string, 
         path?: string, 
@@ -23,8 +23,8 @@ export const Router: FC = memo(() => {
             element={route.children}
           />
       ))}
-     </Route>
-     <Route path="*" element={<Page404 />}/>
+      </Route>
+      <Route path="*" element={<Page404 />}/>
     </Routes>
   )
 });

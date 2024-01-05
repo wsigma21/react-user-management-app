@@ -4,12 +4,15 @@ import { UserCard } from "../organisms/user/UserCard";
 import { useAllUsers } from "../../hooks/useAllUsers";
 import { useSelectUser } from "../../hooks/useSelectUser";
 import { UserDetailModal } from "../organisms/user/UserDetailModal";
+import { useLoginUser } from "../../hooks/useLoginUser";
 
 export const UserManagement: FC = memo(() => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { getUsers, users, loading} = useAllUsers();
   const { onSelectUser, selecedUser } = useSelectUser();
- 
+  const { loginUser } = useLoginUser();
+  console.log(loginUser);
+
   // 初期マウント時1回だけ実行
   useEffect(() => {
     getUsers();
