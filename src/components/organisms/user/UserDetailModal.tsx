@@ -1,5 +1,5 @@
 import { ChangeEvent, FC, memo, useEffect, useState } from "react";
-import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, Stack, FormControl, FormLabel, Input, Button, ModalFooter } from "@chakra-ui/react";
+import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, Stack, FormControl, FormLabel, Input, ModalFooter } from "@chakra-ui/react";
 import { User } from "../../../types/api/user";
 import { PrimaryButton } from "../../atoms/button/PrimaryButton";
 
